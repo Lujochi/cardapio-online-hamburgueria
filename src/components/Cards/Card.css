@@ -1,0 +1,39 @@
+.card-box {
+  display: flex;
+  gap: 15px;
+  width: 610px;
+}
+
+.card-box img {
+  width: 144px;
+}
+
+.text-box h3 {
+  font-weight: 600;
+}
+
+.text-box p {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.price-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-cart span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.price-cart button {
+  background-color: black;
+  border-radius: 4px;
+  padding: 0 6px;
+}
+
+.price-cart button i {
+  color: #fff;
+}

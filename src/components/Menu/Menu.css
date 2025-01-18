@@ -1,0 +1,21 @@
+#Cardapio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f6f8;
+}
+
+#Cardapio h2 {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 30px;
+}
