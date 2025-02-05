@@ -524,8 +524,17 @@
   .collapse {
     visibility: collapse;
   }
+  .fixed {
+    position: fixed;
+  }
   .relative {
     position: relative;
+  }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
+  .z-40 {
+    z-index: 40;
   }
   .mx-auto {
     margin-inline: auto;
@@ -657,6 +666,9 @@
   .bg-green-600 {
     background-color: var(--color-green-600);
   }
+  .bg-red-500 {
+    background-color: var(--color-red-500);
+  }
   .bg-zinc-900 {
     background-color: var(--color-zinc-900);
   }
@@ -680,6 +692,15 @@
   }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
   }
   .text-center {
     text-align: center;
