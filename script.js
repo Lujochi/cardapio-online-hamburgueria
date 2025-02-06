@@ -165,7 +165,7 @@ checkoutBtn.addEventListener("click", () => {
     .join("");
 
   const message = encodeURIComponent(cartItems);
-  const phone = "47991653010";
+  const phone = "47000000000";
   const priceTotal = cartTotal.textContent;
 
   window.open(
