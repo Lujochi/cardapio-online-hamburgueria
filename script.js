@@ -8,6 +8,7 @@ const closeModalBtn = document.getElementById("close-modal-btn");
 const cartCounter = document.getElementById("cart-count");
 const addressInput = document.getElementById("address");
 const addressWarn = document.getElementById("address-warn");
+const spanItem = document.getElementById("date-span");
 
 let cart = [];
 
@@ -129,6 +130,13 @@ addressInput.addEventListener("input", (event) => {
 });
 
 checkoutBtn.addEventListener("click", () => {
+  const isOpen = checkRestaurantOpen();
+
+  if (!isOpen) {
+    alert("O RESTAURANTE ESTÁ FECHADO NO MOMENTO, TENTE NOVAMENTE MAIS TARDE!");
+    return;
+  }
+
   if (cart.length === 0) return;
 
   if (addressInput.value === "") {
@@ -137,3 +145,21 @@ checkoutBtn.addEventListener("click", () => {
     return;
   }
 });
+
+
+
+const checkRestaurantOpen = () => {
+  const data = new Date();
+  const hour = data.getHours();
+  return hora >= 18 && hora < 22;
+};
+
+const isOpen = checkRestaurantOpen();
+
+if (isOpen) {
+  spanItem.classList.remove("bg-red-500");
+  spanItem.classList.add("bg-green-600");
+} else {
+  spanItem.classList.remove("bg-green-600");
+  spanItem.classList.add("bg-red-500");
+}
